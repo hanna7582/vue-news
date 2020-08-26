@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <menu-bar></menu-bar>    
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// 해당 파일에만 eslint 비활성화 
+// /* eslint-disable */ 
+import MenuBar from "./components/MenuBar";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    MenuBar,
+  },  
 }
 </script>
 
@@ -21,8 +21,22 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.active{
+  color:blue;
+}
+li{
+   list-style: none;   
+}
+.contents{
+  animation: cloak-in 1s;
+}
+.contents[v-cloak]{
+    opacity: 0;
+}
+@keyframes cloak-in {
+    0%{opacity: 0;}
 }
 </style>
