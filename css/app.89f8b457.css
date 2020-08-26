@@ -1,0 +1,1 @@
+#app{font-family:Avenir,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#2c3e50;margin-top:60px}.active{color:#00f}li{list-style:none}.contents{-webkit-animation:cloak-in 1s;animation:cloak-in 1s}.contents[v-cloak]{opacity:0}@-webkit-keyframes cloak-in{0%{opacity:0}}@keyframes cloak-in{0%{opacity:0}}
